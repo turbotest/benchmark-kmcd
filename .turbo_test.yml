@@ -2,7 +2,7 @@ env:
   FOO: bar
 
 install: |
-  # clear_cache: d937bc69170d51789bd314ab65ee1959
+  # clear_cache: 04d8bd12d5796d349694c0808b21a3d5
   sudo apt-get update -y
   sudo apt-get install make gcc g++ make -y --no-install-recommends
 
