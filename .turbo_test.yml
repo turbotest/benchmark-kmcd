@@ -9,7 +9,6 @@ install: |
 setup: |
   echo $FOO
 
-
 test_suite:
   env:
     FOO: test suite bar
