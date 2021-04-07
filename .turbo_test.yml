@@ -2,7 +2,7 @@ env:
   FOO: bar
 
 install: |
-  # clear_cache: 8e85013f708185d3a443a3a07df24353
+  # clear_cache: ed558d3c46b407aa7887ffcc1dc0d77b
   sudo apt-get update -y
   sudo apt-get install make gcc g++ make -y --no-install-recommends
 
@@ -18,8 +18,8 @@ test_suite:
 
   files:
     # - test_8_pool/*_test.sh
-    # - test_5_smoke/*_test.sh
-    - test_17_mins/*_test.sh
+    - test_5_smoke/*_test.sh
+    # - test_17_mins/*_test.sh
     # - test_34_mins/*_test.sh
     # - test_68_mins/*_test.sh
     # - test_136_mins/*_test.sh
