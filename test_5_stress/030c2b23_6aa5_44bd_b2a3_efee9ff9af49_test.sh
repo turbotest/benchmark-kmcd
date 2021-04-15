@@ -1,1 +1,1 @@
-stress --cpu 2 --timeout 5.025681548794943
+stress --cpu 2 --timeout 5
