@@ -2,7 +2,7 @@ env:
   FOO: bar
 
 install: |
-  # clear_cache: 07b5cb13caa2743317432f68b4dd28a1
+  # clear_cache: b9de9962204cabc8c113911b8e6a1810
   sudo apt-get update -y
   sudo apt-get install build-essential stress -y --no-install-recommends
 
