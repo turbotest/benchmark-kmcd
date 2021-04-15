@@ -1,1 +1,1 @@
-stress-ng --clock 2 --cpu-load 100 --timeout 1.137890161991308
+stress-ng --vm 1 --vm-bytes 75% --vm-method all --verify --clock 2 --cpu-load 100 --timeout 1.137890161991308
