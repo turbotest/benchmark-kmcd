@@ -1,0 +1,1 @@
+stress-ng --clock 2 --cpu-load 100 --timeout 3.3188463058079813
