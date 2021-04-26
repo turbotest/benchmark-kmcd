@@ -2,7 +2,7 @@ env:
   FOO: bar
 
 install: |
-  # clear_cache: b9de9962204cabc8c113911b8e6a1810
+  # clear_cache: 597adb5310f4160e9a540e4c543ca28f
   sudo apt-get update -y
   sudo apt-get install build-essential stress stress-ng -y --no-install-recommends
 
@@ -18,9 +18,9 @@ test_suite:
 
   files:
     # - test_8_pool/*_test.sh
-    # - test_5_smoke/*_test.sh
+    - test_5_smoke/*_test.sh
     # - test_5_stress/*_test.sh
-    - test_17_stress/*_test.sh
+    # - test_17_stress/*_test.sh
     # - test_17_mins/*_test.sh
     # - test_34_mins/*_test.sh
     # - test_68_mins/*_test.sh
