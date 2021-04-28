@@ -4,7 +4,7 @@ env:
 install: |
   # clear_cache: 7031ce46f8de8c568ddf12d38498ea55
   sudo apt-get update -y
-  sudo apt-get install build-essential stress stress-ng -y --no-install-recommends
+  sudo apt-get install g++ build-essential stress stress-ng -y --no-install-recommends
 
 setup: |
   echo $FOO
