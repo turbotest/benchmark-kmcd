@@ -2,7 +2,7 @@ env:
   FOO: bar
 
 install: |
-  # clear_cache: 225e6d6190ed323238125a225008d467
+  # clear_cache: c64ea6acbb161211112f3dcafbbf85ff
   sudo apt update -y
   # sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 
