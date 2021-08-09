@@ -2,19 +2,12 @@ env:
   FOO: bar
 
 install: |
-  # clear_cache: e70887a1c171df38c016d88b3b57c56f
+  # clear_cache: f672f0020170694cb13d947dd3d374a6
   sudo apt update -y
   sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 
 setup: |
-  sudo apt update -y
-
-  sudo apt install -y --no-install-recommends \
-    autoconf bison build-essential curl g++ git libdb-dev libffi-dev \
-    libgdbm-dev libncurses5-dev libreadline6-dev libssl-dev \
-    libyaml-dev make libssl-dev libpq-dev \
-    software-properties-common wget zlib1g-dev \
-    cmake pkg-config postgresql-client
+  echo SETUP
 
 test_suite:
   env:
