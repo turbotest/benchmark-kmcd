@@ -8,7 +8,13 @@ install: |
 
 setup: |
   sudo apt update -y
-  sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
+
+  sudo apt install -y --no-install-recommends \
+    autoconf bison build-essential curl g++ git libdb-dev libffi-dev \
+    libgdbm-dev libncurses5-dev libreadline6-dev libssl-dev \
+    libyaml-dev make libssl-dev libpq-dev \
+    software-properties-common wget zlib1g-dev \
+    cmake pkg-config postgresql-client
 
 test_suite:
   env:
