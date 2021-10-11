@@ -18,8 +18,8 @@ test_suite:
 
   files:
     # - test_8_pool_stress/*_test.sh
-    # - test_5_smoke/*_test.sh
-    - test_5_long/*_test.sh
+    - test_5_smoke/*_test.sh
+    # - test_5_long/*_test.sh
     # - test_5_stress/*_test.sh
     # - test_5_fail/*_test.sh
     # - test_17_stress/*_test.sh
