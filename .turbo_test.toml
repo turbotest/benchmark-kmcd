@@ -15,14 +15,14 @@ env.FOO = "test suite bar"
 env.BAZ = "quux"
 
 command = "sh"
-# files = ["test_5_smoke/*_test.sh"]
+files = ["test_5_smoke/*_test.sh"]
 # files = ["test_5_long/*_test.sh"]
 # files = ["test_5_stress/*_test.sh"]
 # files = ["test_5_fail/*_test.sh"]
 # files = ["test_8_pool_stress/*_test.sh"]
 # files = ["test_17_stress/*_test.sh"]
 # files = ["test_17_mins/*_test.sh"]
-files = ["test_34_mins/*_test.sh"]
+# files = ["test_34_mins/*_test.sh"]
 # files = ["test_68_mins/*_test.sh"]
 # files = ["test_136_mins/*_test.sh"]
 # files = ["test_272_mins/*_test.sh"]
