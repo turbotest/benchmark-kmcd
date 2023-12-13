@@ -1,7 +1,7 @@
 env.FOO = "bar"
 
 setup.packages = """
-# clear_cache: 79BECDFC-A2BF-41A6-983B-B32B59D1BA5F
+# clear_cache: E575AD79-1FE3-4DF9-91DB-D3360E2116B8
 sudo apt update -y
 sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 """
