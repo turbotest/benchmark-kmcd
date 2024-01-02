@@ -6,9 +6,9 @@ sudo apt update -y
 sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 """
 
-# setup.test_suite = """
-# echo SETUP
-# """
+setup.test_suite = """
+echo SETUP
+"""
 
 # [test_suite.default]
 # env.FOO = "test suite bar"
