@@ -6,16 +6,16 @@ sudo apt update -y
 sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 """
 
-# setup.test_suite = """
-# echo SETUP
-# """
+setup.test_suite = """
+echo SETUP
+"""
 
-# [test_suite.default]
-# env.FOO = "test suite bar"
-# env.BAZ = "quux"
+[test_suite.default]
+env.FOO = "test suite bar"
+env.BAZ = "quux"
 
-# command = "sh"
-# files = ["test_5_smoke/*_test.sh"]
+command = "sh"
+files = ["test_5_smoke/*_test.sh"]
 # files = ["test_5_long/*_test.sh"]
 # files = ["test_5_stress/*_test.sh"]
 # files = ["test_5_fail/*_test.sh"]
