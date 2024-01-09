@@ -8,7 +8,6 @@ sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 
 setup.test_suite = """
 echo SETUP
-exit 1
 """
 
 [test_suite.default]
