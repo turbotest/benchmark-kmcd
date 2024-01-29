@@ -12,7 +12,7 @@ mkdir -p .cache ~/.cache
 touch .cache/$( uuidgen ).txt ~/.cache/$( uuidgen ).txt
 """
 
-setup.cache = [".cache", "~/.cache"]
+setup.cache = [".cache", "/home/ubuntu/.cache"]
 
 [test_suite.default]
 env.FOO = "test suite bar"
