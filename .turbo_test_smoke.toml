@@ -1,16 +1,16 @@
 env.FOO = "bar"
 
-setup.packages = """
+base_image = """
 # clear_cache: af3ca715df2b8af2e591b53a0fdea8c7
 sudo apt update -y
 sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 """
 
-setup.test_suite = """
+before_test_run = """
 echo SETUP
 """
 
-[test_suite.default]
+[test_run.default]
 env.FOO = "test suite bar"
 env.BAZ = "quux"
 
