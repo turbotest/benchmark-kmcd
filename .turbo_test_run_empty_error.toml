@@ -3,7 +3,7 @@ FOO = "bar"
 
 [base_image]
 commands = '''
-# clear_cache: 510609b2-4fc3-4d3b-8dbf-ebb4c12cb40b
+# clear_cache: af3ca715df2b8af2e591b53a0fdea8c7
 sudo apt update -y
 sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 '''
@@ -18,12 +18,12 @@ env.FOO = "test suite bar"
 env.BAZ = "quux"
 
 command = "sh"
-# files = ["test_5_smoke/*_test.sh"]
+files = ["test_5_smoke/DOES_NOT_EXIST"]
 # files = ["test_5_long/*_test.sh"]
 # files = ["test_5_stress/*_test.sh"]
 # files = ["test_5_fail/*_test.sh"]
 # files = ["test_8_pool_stress/*_test.sh"]
-files = ["test_17_stress/*_test.sh"]
+# files = ["test_17_stress/*_test.sh"]
 # files = ["test_17_mins/*_test.sh"]
 # files = ["test_34_mins/*_test.sh"]
 # files = ["test_68_mins/*_test.sh"]
