@@ -1,14 +1,17 @@
-env.FOO = "bar"
+[env]
+FOO = "bar"
 
-base_image = """
+[base_image]
+commands = '''
 # clear_cache: af3ca715df2b8af2e591b53a0fdea8c7
 sudo apt update -y
 sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
-"""
+'''
 
-before_test_run = """
+[before_test_run]
+commands = '''
 echo SETUP
-"""
+'''
 
 [test_run.default]
 env.FOO = "test suite bar"
