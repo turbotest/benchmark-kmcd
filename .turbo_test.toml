@@ -3,7 +3,7 @@ FOO = "bar"
 
 [base_image]
 commands = '''
-# clear_cache: 260cb186-064a-4d90-ba87-798ddc238fad
+# clear_cache: 15a106cf-3f46-4cfa-a2d1-253825dbd1c2
 sudo apt update -y
 sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 '''
@@ -11,7 +11,12 @@ sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 [before_test_run]
 commands = '''
 echo SETUP
+mkdir -p ~/.cache_test/$( uuidgen )/foo.txt ./.cache_test/$( uuidgen )/foo.txt
+ls -lahR ~/.cache_test .cache_test
 '''
+
+[cache]
+directories = [ "~/.cache_test", ".cache_test" ]
 
 [test_run.default]
 env.FOO = "test suite bar"
