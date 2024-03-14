@@ -11,8 +11,7 @@ sudo apt install g++ build-essential stress stress-ng -y --no-install-recommends
 [before_test_run]
 commands = '''
 echo SETUP
-rm -Rf ~/.cache_test ./.cache_test
-# mkdir -p ~/.cache_test/$( uuidgen )/foo.txt ./.cache_test/$( uuidgen )/foo.txt
+mkdir -p ~/.cache_test/$( uuidgen )/foo.txt ./.cache_test/$( uuidgen )/foo.txt
 ls -lahR ~/.cache_test .cache_test
 '''
 
